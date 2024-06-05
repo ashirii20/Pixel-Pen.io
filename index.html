@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "/w3css/3/w3.css">
+<link rel = "stylesheet" href = "style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<title>Website Layout w/ Logo</title>
+</head>
+
+<body>
+<div id = "wrapper-div">
+    <div id = "header-div" class = "clearfix">
+        <div id = "logo-div">
+            <a href = "" target = "_blank">
+              <img src = "Placeholder_view_vector.svg.png"  alt = "My Website's Logo">
+            </a>
+        </div>
+
+        <div id = "nav-div">
+            <a href = "#About Me" class = "w3-button w3-bar-item" target = "_blank">About Me
+                <!-- p --
+                <p>
+                   Hello fellow creatives! My name is Ashley Margaux A. Solis, a student in FEU Institute of Technology.
+                   The program i'm taking is BSITAGD or Bachelor of Science in Information Technology with Specialization in Animation and Game Development.
+                   I'm an aspiring artist and game developer and my dream is to actually utilize my knowledge gained in this program for the betterment of the world.
+                   Although that dream seems pretty huge, i won't forget to incorporate my own flair (with a side of dorkiness!) with it.
+                </p>
+                <p>
+                   This website encompasses my creative writing endeavors including:
+                   - Stories: These are my works that i published online and WIPs.
+                   - Animation Ideas: These are my ideas for animations i would like to do in the future, includes inspo.
+                   - Game Plot Ideas: These are my ideas for game plots i would like to do in the future, includes inspo.
+                </p>
+                <p>Happy Scrolling!</p> !-- p -->
+            </a>
+            <a href = "#Stories" class = "w3-button w3-bar-item">Stories</a>
+            <a href = "#Animation Ideas" class = "w3-button w3-bar-item">Animation Ideas</a>
+            <a href = "#Game Plot Ideas" class = "w3-button w3-bar-item">Game Plot Ideas</a>
+        </div>
+    </div>
+
+
+    <div id = "main-content-div">
+        <section>
+            <img class = "slideshow" src = "Placeholder_view_vector.svg.png" alt = "placeholder 1"
+            style = "width:25%">
+            <img class = "slideshow" src = "Placeholder_view_vector.svg.png" alt = "placeholder 2"
+            style = "width:25%">
+            <img class = "slideshow" src = "Placeholder_view_vector.svg.png" alt = "placeholder 3"
+            style = "width:25%">
+          </section>
+    </div>
+
+    <div id = "footer-div">
+        <img src = "" alt = "">
+    </div>
+
+    <div class = "sidebar-div">
+        <a class = "active" href = "#About Me">About Me</a>
+        <a href = "#Stories">Stories</a>
+        <a href = "#Animation Ideas">Animation Ideas</a>
+        <a href = "#Game Plot Ideas">Game Plot Ideas</a>
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("slideshow");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+        </script>
+</div>
+</body>
+</html>
