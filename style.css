@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Console", Courier, monospace;
+    background-color: rgb(173, 136, 198);
+}
+
+#wrapper-div {
+    width: 70%;
+    margin: auto;
+}
+
+#header-div {
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#logo-div {
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(116, 105, 182);
+    color:rgb(255, 230, 230);
+    padding-left: 2%;
+    padding-right: 2%;
+    line-height: 100px;
+}
+
+#logo-div img {
+    max-height: 25%;
+    width: 100px;
+    vertical-align: middle;
+}
+
+#nav-div {
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(116, 105, 182);
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+#nav-div a {
+    margin: 0 10px;
+    font-weight: bold;
+    color: rgb(255, 230, 230);
+}
+
+#main-content-div {
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    background-color: rgb(116, 105, 182);
+}
+
+#text-div {
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 230, 230);
+    margin-bottom: 20px;
+}
+
+#box1-div, #box2-div, #box3-div {
+    width: 30%;
+    min-height: 100px;
+    float: left;
+    margin: 0 1.66%;
+    margin-bottom: 20px;
+}
+
+#box2-div {
+    margin-left: 1.66%;
+    margin-right: 1.66%;
+}
+
+#box1-div img, #box2-div img, #box3-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#footer-div {
+    width: 100%;
+    min-height: 30px;
+    background-color: rgb(255, 230, 230);
+    margin-top: 20px;
+}
+
+#footer-div img {
+    max-height: 25%;
+    width: 100px;
+    vertical-align: middle;
+}
