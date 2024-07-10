@@ -1,0 +1,41 @@
+* {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lucida Console", Courier, monospace;
+    background-color: rgb(173, 136, 198);
+}
+
+
+
+#intro-div{
+    width: 100%;
+    text-align: center;
+    min-height: 50px;
+    background-color: rgb(116, 105, 182);
+    color: rgb(255, 230, 230);
+    margin-top: 90px;
+}
+
+#siteContent-div{
+    width: 100%;
+    text-align: center;
+    min-height: 50px;
+    background-color: rgb(116, 105, 182);
+    color: rgb(255, 230, 230);
+    margin-top: 20px;
+}
+
+#footer-div {
+    width: 100%;
+    min-height: 30px;
+    background-color: rgb(255, 230, 230);
+    margin-top: 100px;
+}
+
+#footer-div img {
+    max-height: 25%;
+    width: 100px;
+    vertical-align: middle;
+}
